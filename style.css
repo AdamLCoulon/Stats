@@ -1,0 +1,255 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* UTILITIES */
+  
+  /* hides an element on screen, but not from screen readers */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  /* no break */
+  .nobr {
+    white-space: nowrap;
+  }
+  
+  body {
+    background-color: rgb(122, 146, 153);
+  }
+  
+  /* Typography */
+  h2, h3, a {
+    font-family: 'Roboto', sans-serif
+  }
+  
+  /* Sidenav css */
+  .menu-text {
+    font-size: 24px;
+    display: block;
+  }
+
+  .home {
+    color:rgb(245, 245, 245);
+    font-size: 25px;
+    position: fixed;
+    top: 20px;
+    right: 100px;
+    font-family: 'PT Sans', sans-serif;
+    padding: 5px;
+    border: 2px solid rgb(245, 245, 245);
+    border-radius: 3px;
+    z-index: -1; 
+  }
+
+  .notebook {
+    color:rgb(245, 245, 245);
+    font-size: 25px;
+    position: fixed;
+    top: 70px;
+    right: 100px;
+    font-family: 'PT Sans', sans-serif;
+    padding: 5px;
+    border: 2px solid rgb(245, 245, 245);
+    border-radius: 3px;
+    z-index: -1; 
+  }
+
+  
+  .openbtn {
+    position: fixed;
+    left: 50px;
+    top: 25px;
+    color: white;
+    background-color: rgb(156, 156, 156); 
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'PT Sans', sans-serif;
+    z-index: -1; 
+  }
+  
+  .all-over-bkg {
+    display: none;
+  }
+  
+  .is-visible {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    z-index: 9999;
+    display: block;
+  }
+  
+  #mySidenav {
+    z-index: 10000;
+  }
+  
+  .sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    overflow-x: hidden; 
+    padding-top: 120px; 
+    transition: 0.5s; 
+    background-color: rgba(129, 125, 125, 0.9); 
+  }
+  
+  .sidenav a {
+    padding: 15px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 245, 245);
+  }
+  
+  .sidenav a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 50px;
+    right: 75px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  main {
+    transition: margin-left .5s;
+    padding: 0;
+  }
+  
+  header {
+    background-color: rgb(156, 156, 156);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding-bottom: 50px;
+    z-index: -1; 
+  }
+
+  .head h1 {
+      text-align: center;
+      font-size: 40px;
+      width: 50%;
+      margin: 0 auto;
+      color: rgb(245,245,245);
+      padding-top: 30px;
+    }
+
+h2 {
+  font-size: 40px;
+}
+
+.about {
+  margin-top: 13.0em;
+  margin-left: 40%;
+  color: white;
+}
+
+.about p {
+  margin-top: 2.0em;
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 70%;
+  padding: 13px;
+  margin-left: -20%;
+  font-size: 18px;
+}
+
+.img {
+  margin-top: 2.0em;
+  margin-bottom: 3.0em;
+}
+
+.img img{
+  border-radius: 5px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-bottom: 5.0em;
+}
+
+.table-title {
+    margin-top: 13.0em;
+    margin-left: 40%;
+    color: white;}
+
+.table-title p{
+  margin-top: 2.0em;
+  margin-bottom: 3.0em;
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 70%;
+  padding: 20px;
+  margin-left: -18%;
+  font-size: 20px;
+}
+
+.table {
+    margin-top: 1.0em;
+    margin-bottom: 8.0em;
+    margin-left: 30%;}
+
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.insert {
+  width: 75%;
+  margin-left: 5%;
+  margin-top: 10.0em;
+  margin-bottom: 5.0em;
+  font-size: 20px;
+}
+
+.insert-title {
+  color: white;
+  width: 40%;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 5px;
+  margin-bottom: 3.0em;
+  margin-top: 2.0em;
+  align-items: center;
+}
+
+.insert input {
+  padding: 5px;
+  width: 40%;
+}
+
+.center {
+  color: red;
+}
+  
+
+  
+   
+  
+ 
