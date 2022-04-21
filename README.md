@@ -11,7 +11,7 @@ Team_pace (The number of offensive possessions for the team) <br>
 Team_efg_pct (The overall field goal percentage for the team) <br>
 Team_off_rtg (The offensive efficiency for the team) <br>
 
-**away_team**
+**away_team** <br>
 game_id (Primary key that identifies each game) <br>
 Opp_Abbrev (A three letter identifier for each team) <br>
 Opp_Score (The overall score obtained by the away team) <br>
@@ -19,7 +19,7 @@ Opp_pace (The number of offensive possessions for the away team) <br>
 Opp_efg_pct (The overall field goal percentage for the away team) <br>
 Opp_off_rtg (The offensive efficiency for the away team) <br>
 
-**player_stats**
+**player_stats** <br>
 game_id (Primary key that identifies each game) <br>
 Player_Name (The name of the highest scorer of that game) <br>
 Pts (The number of points the player had) <br>
